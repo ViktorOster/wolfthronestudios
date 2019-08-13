@@ -152,6 +152,13 @@ section {
 .hero__button-container {
     margin-top: 28px;
 }
+@media (max-width: 422px) {
+    .hero__button-container button {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
 .button {
     transition: all 0.1s ease-in-out;
     font-family: "Oswald", sans-serif;
