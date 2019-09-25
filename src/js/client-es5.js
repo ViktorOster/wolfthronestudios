@@ -123,12 +123,14 @@ buttonSamples.addEventListener("click", function () {
         behavior: 'smooth'
     });
 });
+
 buttonQuote.addEventListener("click", function () {
     window.scrollTo({
         top: contactPosY,
         left: 0,
         behavior: 'smooth'
     });
+
 }); //make nav links active on scroll
 
 window.addEventListener("scroll", function () {
@@ -284,3 +286,4 @@ r(function () {
         };
     }
 });
+
