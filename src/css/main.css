@@ -36,6 +36,9 @@ section {
     padding-top: 115px;
     position: relative;
 }
+.form-label {
+    opacity: 0.8;
+}
 .link {
     color: rgb(15, 86, 238);
     cursor: pointer;
@@ -132,7 +135,7 @@ section {
 .icon {
     width: 18px;
     height: 18px;
-    margin: auto 2px auto 0;
+    margin: auto 0.5em auto 0;
 }
 .icon-md {
     width: 24px;
@@ -158,7 +161,7 @@ section {
     color: #ffffff !important;
 }
 .social-icons {
-    display: none;
+    /* display: none; */
 }
 .social-icons img{
     opacity: 0.9;
@@ -352,12 +355,12 @@ section {
     height: 100%;
 
     /* background-image: url("../assets/images/hero-drums-placeholder.png"); */
-    filter: grayscale(100%) contrast(120%) brightness(135%);
+    /* filter: grayscale(100%) contrast(120%) brightness(135%); */
     
-    /* background-image: url("../assets/images/studio/Image9.jpg"); */
+    background-image: url("../assets/images/studio/Image9.jpg");
     /* background-position: left 53%; 
     */
-    background-image: url("../assets/images/studio/SERVICES-2-wide.jpg"); 
+    /* background-image: url("../assets/images/studio/SERVICES-2-wide.jpg");  */
     transform: scale(1.08); 
 
     /* background-image: url("../assets/images/studio/SERVICES-2.jpg");  */
@@ -373,7 +376,7 @@ section {
     background-size: cover; 
     background-attachment: fixed;
    
-    /* filter: grayscale(100%) contrast(180%) brightness(50%); */
+    filter: grayscale(100%) contrast(180%) brightness(50%);
     
     /* filter: grayscale(10%) contrast(90%) brightness(120%); */
 }
