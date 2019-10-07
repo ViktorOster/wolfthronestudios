@@ -270,7 +270,10 @@ r(function () {
         play.setAttribute("class", "play");
         //track video plays with GA
         play.addEventListener("click", () => {
-            ga('send', 'Wolfthrone-Studios', 'Play-Video', 'Video-Embed');
+            gtag('event', 'media-play', {
+                'event_category': 'video-play',
+                'event_label': 'home-video-play'
+            });
         })
         videos[i].appendChild(play);
 

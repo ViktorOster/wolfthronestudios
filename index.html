@@ -92,9 +92,9 @@
             <p class="mb-4 text-shadow font-smaller">Recording • Mixing • Mastering • Video</p>
             <div class="hero__button-container">
                 <button class="button button-cta mr-2 mb-3" id="button-quote" onclick="gtag('event', 'click', {
-                        'event_category': 'click-CTA',
-                        'event_label': 'hero-quote-CTA'
-                    });">
+                    'event_category': 'click-CTA',
+                    'event_label': 'hero-quote-CTA'
+                });">
                     Request a Quote
                 </button>
                 <button class="button button-outline ml-2" id="button-samples" onclick="gtag('event', 'click', {
@@ -224,8 +224,10 @@
                 We’re commited to make your recordings sound balanced and punchy across all systems. The tracks can be
                 either recorded in the studio or sent in as files, if recorded elsewhere. The price may vary, as every
                 project is different. We offer a discount for multiple tracks, such as an album or an EP. To view the
-                exact price per song, <span class="prices-modal-link link"
-                    onclick="ga('send', 'Wolfthrone-Studios', 'View-Prices', 'Home-Prices-Link');">click here.</span>
+                exact price per song, <span class="prices-modal-link link" onclick="gtag('event', 'click', {
+                    'event_category': 'view-prices',
+                    'event_label': 'home-view-prices'
+                });">click here.</span>
             </p>
             <strong>Mastering: 40€/song</strong>
             <p>
@@ -233,8 +235,10 @@
                 speaker
                 systems. As with mixing, the material can be recorded in the studio or sent in as files, if recorded
                 elsewhere; again we offer a discount for multiple tracks. To view the
-                exact price per song, <span class="prices-modal-link link"
-                    onclick="ga('send', 'Wolfthrone-Studios', 'View-Prices', 'Home-Prices-Link');">click here.</span>
+                exact price per song, <span class="prices-modal-link link" onclick="gtag('event', 'click', {
+                    'event_category': 'view-prices',
+                    'event_label': 'home-view-prices'
+                });">click here.</span>
 
             </p>
             <strong>Video Shoot: Contact Us for Price</strong>
@@ -610,8 +614,10 @@
                 </label>
                 <br>
 
-                <input value="Send" class="button button-form" type="submit"
-                    onclick="gtag('send', 'Wolfthrone-Studios', 'Form-Submit', 'Home-Contact-Form');">
+                <input value="Send" class="button button-form" type="submit" onclick="gtag('event', 'submit', {
+                    'event_category': 'form-submit',
+                    'event_label': 'home-contact-form'
+                });">
                 <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control"
                     style="width:100%;"></div>
                 <div class="spacer-lg"></div>
