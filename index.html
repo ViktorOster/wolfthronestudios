@@ -91,20 +91,25 @@
 
             <p class="mb-4 text-shadow font-smaller">Recording • Mixing • Mastering • Video</p>
             <div class="hero__button-container">
-                <button class="button button-cta mr-2 mb-3" id="button-quote">Request a Quote</button>
-                <button class="button button-outline ml-2" id="button-samples">Listen to Samples</button>
+                <button class="button button-cta mr-2 mb-3" id="button-quote"
+                    onclick="ga('send', 'Wolfthrone-Studios', 'Quote-CTA-Click', 'Hero-Quote-CTA');">
+                    Request a Quote
+                </button>
+                <button class="button button-outline ml-2" id="button-samples"
+                    onclick="ga('send', 'Wolfthrone-Studios', 'Samples-CTA-Click', 'Hero-Samples-CTA');">
+                    Listen to Samples
+                </button>
             </div>
         </div>
-
     </section>
+
     <section id="section-about" class="texture">
         <div class="container">
             <h2>About the Studio</h2>
             <p>
-                The studio was founded in 2013 by musician and producer Owe Inborr. The studio is dedicated to
-                delivering
-                high quality recordings mainly within the rock, punk and metal genres.
-                <br>
+                The studio was founded in 2013 by musician and producer Owe Inborr and is located in Forsby (Pedersöre),
+                Finland. The studio is dedicated to delivering high quality recordings mainly within the rock, punk and
+                metal genres.
                 The main focus of the studio is tracking instruments, but the studio is also able to do smaller live
                 recordings, live video shoots and music videos.
             </p>
@@ -116,7 +121,6 @@
 
         </div>
         <div class="spacer-lg"></div>
-
     </section>
 
     <div class="gallery-fullscreen">
@@ -124,9 +128,8 @@
         <button class="gallery__navigation gallery-prev"><img src="src/assets/icons/arrow-right.svg" alt=""></button>
         <button class="gallery__navigation gallery-next"><img src="src/assets/icons/arrow-right.svg" alt=""></button>
     </div>
+
     <div class="gallery">
-
-
         <div class="gallery-column">
             <div class="gallery-img img-box width-50"><img src="src/assets/images/studio/EQUIPMENT-3.jpg" alt="" />
             </div>
@@ -162,6 +165,7 @@
             </div>
         </div>
     </div>
+
     <p class="text-center text-muted">
         <small>Click the images to make them bigger</small>
     </p>
@@ -216,15 +220,17 @@
                 We’re commited to make your recordings sound balanced and punchy across all systems. The tracks can be
                 either recorded in the studio or sent in as files, if recorded elsewhere. The price may vary, as every
                 project is different. We offer a discount for multiple tracks, such as an album or an EP. To view the
-                exact price per song, <span class="prices-modal-link link">click here.</span>
+                exact price per song, <span class="prices-modal-link link"
+                    onclick="ga('send', 'Wolfthrone-Studios', 'View-Prices', 'Home-Prices-Link');">click here.</span>
             </p>
-            <strong>Mastering: 40€/day</strong>
+            <strong>Mastering: 40€/song</strong>
             <p>
                 Before the release of a recording, it needs to be sonically balanced to work across a wide range of
                 speaker
                 systems. As with mixing, the material can be recorded in the studio or sent in as files, if recorded
                 elsewhere; again we offer a discount for multiple tracks. To view the
-                exact price per song, <span class="prices-modal-link link">click here.</span>
+                exact price per song, <span class="prices-modal-link link"
+                    onclick="ga('send', 'Wolfthrone-Studios', 'View-Prices', 'Home-Prices-Link');">click here.</span>
 
             </p>
             <strong>Video Shoot: Contact Us for Price</strong>
@@ -235,7 +241,6 @@
         </div>
         <div class="spacer-lg"></div>
     </section>
-
 
     <section id="section-clients" class="clients-gallery text-center texture">
         <div class="clients-overlay"></div>
@@ -361,9 +366,12 @@
             <h2>Samples</h2>
             <div class="row mb-4">
                 <div class="col-md-6 col-sm-12">
+
+
                     <iframe class="sample__bandcamp" style="border: 0; width: 100%; height: 42px;"
                         data-src="https://bandcamp.com/EmbeddedPlayer/album=3755605727/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3232998213/transparent=true/"
-                        seamless><a href="http://dispyt.bandcamp.com/album/livsgl-dje">Livsglädje by DISPYT</a></iframe>
+                        seamless><a href="http://dispyt.bandcamp.com/album/livsgl-dje">Livsglädje by
+                            DISPYT</a></iframe>
                     <p class="sample-caption audio-caption">Dispyt - <span class="text-bold">Recording, Mixing,
                             Mastering</span>
                     </p>
@@ -597,8 +605,9 @@
                     <span class="checkmark"></span>
                 </label>
                 <br>
-                <!-- <button type="button" onClick="submitToAPI(event)" class="button button-form">Submit</button> -->
-                <input value="Send" class="button button-form" type="submit">
+
+                <input value="Send" class="button button-form" type="submit"
+                    onclick="ga('send', 'Wolfthrone-Studios', 'Form-Submit', 'Home-Contact-Form');">
                 <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control"
                     style="width:100%;"></div>
                 <div class="spacer-lg"></div>

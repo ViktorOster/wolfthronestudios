@@ -269,6 +269,10 @@ r(function () {
 
         var play = document.createElement("div");
         play.setAttribute("class", "play");
+        //track video plays with GA
+        play.addEventListener("click", () => {
+            ga('send', 'Wolfthrone-Studios', 'Play-Video', 'Video-Embed');
+        })
         videos[i].appendChild(play);
 
         videos[i].onclick = function () {
@@ -287,3 +291,7 @@ r(function () {
     }
 });
 
+
+// window.addEventListener("click", (e) => {
+//     console.log(e.target)
+// })
