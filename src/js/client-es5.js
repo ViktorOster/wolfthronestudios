@@ -178,6 +178,9 @@ galleryImages.forEach(function (img) {
     img.addEventListener("click", function (e) {
         if (!img.classList.contains("is-expanded")) {
             img.className += " is-expanded";
+            var imgElement = img.firstElementChild;
+            //set the img src to the bigger image by removing "-small.jpg" from end off image and appending .jpg to end
+            imgElement.src = imgElement.src.substring(0, imgElement.src.length - 10) + ".jpg"
             siteOverlay.className += " is-visible is-gallery";
             galleryFullscreen.className += " is-visible";
         }
