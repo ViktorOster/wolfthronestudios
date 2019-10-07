@@ -1,4 +1,3 @@
-
 "use strict";
 //forEach polyfill
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -290,8 +289,3 @@ r(function () {
         };
     }
 });
-
-
-// window.addEventListener("click", (e) => {
-//     console.log(e.target)
-// })

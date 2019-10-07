@@ -91,12 +91,16 @@
 
             <p class="mb-4 text-shadow font-smaller">Recording • Mixing • Mastering • Video</p>
             <div class="hero__button-container">
-                <button class="button button-cta mr-2 mb-3" id="button-quote"
-                    onclick="ga('send', 'Wolfthrone-Studios', 'Quote-CTA-Click', 'Hero-Quote-CTA');">
+                <button class="button button-cta mr-2 mb-3" id="button-quote" onclick="gtag('event', 'click', {
+                        'event_category': 'click-CTA',
+                        'event_label': 'hero-quote-CTA'
+                    });">
                     Request a Quote
                 </button>
-                <button class="button button-outline ml-2" id="button-samples"
-                    onclick="ga('send', 'Wolfthrone-Studios', 'Samples-CTA-Click', 'Hero-Samples-CTA');">
+                <button class="button button-outline ml-2" id="button-samples" onclick="gtag('event', 'click', {
+                        'event_category': 'click-CTA',
+                        'event_label': 'hero-samples-CTA'
+                    });">
                     Listen to Samples
                 </button>
             </div>
@@ -607,7 +611,7 @@
                 <br>
 
                 <input value="Send" class="button button-form" type="submit"
-                    onclick="ga('send', 'Wolfthrone-Studios', 'Form-Submit', 'Home-Contact-Form');">
+                    onclick="gtag('send', 'Wolfthrone-Studios', 'Form-Submit', 'Home-Contact-Form');">
                 <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control"
                     style="width:100%;"></div>
                 <div class="spacer-lg"></div>
