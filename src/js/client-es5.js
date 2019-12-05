@@ -174,6 +174,11 @@ navItems.forEach(function (link) {
         });
     });
 });
+
+function replaceWithBigImage(imgElement) {
+    if (imgElement.src.includes("small"))
+        imgElement.src = imgElement.src.substring(0, imgElement.src.length - 10) + ".jpg"
+}
 galleryImages.forEach(function (img) {
     img.addEventListener("click", function (e) {
         if (!img.classList.contains("is-expanded")) {
@@ -181,8 +186,8 @@ galleryImages.forEach(function (img) {
             var imgElement = img.firstElementChild;
             //set the img src to the bigger image by removing "-small.jpg" from end off image and appending .jpg to end
             //but only filename contains "small"
-            if (imgElement.src.includes("small"))
-                imgElement.src = imgElement.src.substring(0, imgElement.src.length - 10) + ".jpg"
+            replaceWithBigImage(imgElement);
+
             siteOverlay.className += " is-visible is-gallery";
             galleryFullscreen.className += " is-visible";
         }
@@ -225,7 +230,10 @@ galleryNext.addEventListener("click", function (e) {
             currIndex = galleryImages.indexOf(img);
         }
     });
-    if (galleryImages[currIndex + 1]) galleryImages[currIndex + 1].className += " is-expanded"; else galleryImages[0].className += " is-expanded";
+    if (galleryImages[currIndex + 1]) currIndex++;
+    else currIndex = 0;
+    galleryImages[currIndex].classList += " is-expanded"
+    replaceWithBigImage(galleryImages[currIndex].firstChild);
 });
 var galleryPrev = document.querySelector(".gallery-prev");
 galleryPrev.addEventListener("click", function (e) {
@@ -236,8 +244,15 @@ galleryPrev.addEventListener("click", function (e) {
             currIndex = galleryImages.indexOf(img);
         }
     });
-    if (galleryImages[currIndex - 1]) galleryImages[currIndex - 1].className += " is-expanded"; else galleryImages[galleryImages.length - 1].className += " is-expanded";
-}); //lazy loaded youtube embeds with preview
+    if (galleryImages[currIndex - 1]) currIndex--;
+    else currIndex = galleryImages.length - 1;
+    galleryImages[currIndex].classList += " is-expanded"
+    replaceWithBigImage(galleryImages[currIndex].firstChild);
+
+});
+
+
+//lazy loaded youtube embeds with preview
 
 'use strict';
 
