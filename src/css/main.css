@@ -538,6 +538,10 @@ section {
         left: 30%;
         top: 75%;
     }
+    .hero {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .img-width-full img{
