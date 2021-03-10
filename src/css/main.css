@@ -49,6 +49,8 @@ section {
 }
 section.samples {
     background-color: #E9E9E9;
+    padding-top: 75px;
+    margin-top: 55px;
 }
 .form-label {
     opacity: 0.8;
