@@ -628,6 +628,15 @@ section {
     width: 12.5%;
     height: 12.5vw;
 }
+
+section.clients h3 {
+    background-color: #E2E2E2;
+    padding: 0.25em;
+}
+section.clients ul {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
 .clients-list {
     font-weight: 300;
     font-family: "Oswald", sans-serif;
