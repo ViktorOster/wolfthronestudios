@@ -40,6 +40,10 @@ h2 {
     margin-bottom: 36px !important;
     font-size: 2em;
 }
+h3 {
+    margin-bottom: 24px !important;
+    font-size: 1.5em;
+}
 section {
     padding-top: 115px;
     position: relative;
